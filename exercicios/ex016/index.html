@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores em CSS</title>
+    <style>
+        .nome,.hex,.rgb,.hsl{
+            background-color: #00008b;
+            color: #fff;
+        }
+        .rgba{
+            background-color: rgba(0,0,139,0.5);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cores em CSS</h1>
+    <p>Para entender esse execício, olhe bem atentamente o código fonte do arquivo.</p>
+    <h2 class="nome">Este título está colorido usando cores por nome</h2>
+    <h2 class="hex">Já esse está usando cores pelo código hexadecimal</h2>
+    <h2 class="rgb">Este outro está colorido usando a função rgb(red,green,blue);</h2>
+    <h2 class="hsl">Este outro aqui está usando a função hsl(hue,saturation,lightness);</h2>
+    <p>As cores resultantes são exatamente as mesmas mas o formato e representação mudam conforme o padrão escolhido</p>
+    <p>Também é possível usar transparência usando a função rgba() ou hsla()</p>
+    <h2 class="rgba">Nesse título, o fundo teve sua transparência configurada para 50%</h2>
+</body>
+</html>

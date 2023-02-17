@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding:1px 15px;
+        }
+        a{
+            color: rgb(228, 106, 30);
+            text-decoration: none;
+        }
+        a:hover::before{
+            content: '>>';
+            color: #000;
+        }
+        a:hover::after{
+            content: '<<';
+            color: #000;
+        }
+        a:active{
+            color: black;
+        }
+        a:visited{
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pesonalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gabrielhluz/gabrielhluz.github.io" rel="external" target="_blank">repositório no github</a></li>
+        <li><a href="https://www.youtube.com/cursoemvideo" rel="external" target="_blank">Canal do youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" rel="external" target="_blank">Site do curso em video</a></li>
+    </ul>
+</body>
+</html>

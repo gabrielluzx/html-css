@@ -1,0 +1,29 @@
+@charset "utf-8";
+body{
+    background: #ffcf32c8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 20px;
+}
+h1{
+    color:#806819;
+}
+h2{
+    color: #BF9C26;
+}
+#principal{
+    color:  #40340D;
+    text-align: center;
+    font: bolder 2.5em  Georgia, 'Times New Roman', Times, serif;
+}
+.basico{
+    color: #21C249;
+}
+.intermediario{
+    color:#C2C215;
+}
+.avancado{
+    color:#E61200;
+}
+.destaque{
+    font-style: italic;
+}

@@ -1,0 +1,27 @@
+html{
+    background-color: #0f0f0f;
+    color: #ffffff;
+
+}
+h1{
+    text-align: center;
+    font: 35px Arial;
+    line-height: 2;
+}
+p{
+    text-align: center;
+    margin-top: -20px;
+}
+a{
+    color: #b8acac;
+    text-decoration-line: none;
+}
+.centro{
+    text-align: center;
+    display: block;
+    line-height: 3;
+}
+img#php{
+    margin-left: -2px;
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family:"cinzel";
+            src: url("./cinzel/Cinzel-VariableFont_wght.ttf") format("truetype");
+        }
+        @font-face {
+            font-family:"bebas-neue";
+            src: url("./bebas-neue/BebasNeue-Regular.ttf") format("truetype"),
+            url("./bebas-neue/BebasNeue-Regular.eot") format("embbed-opentype");
+        }
+        @font-face {
+            font-family: "party";
+            src: url("./party/Hanging\ Party.otf") format("opentype");
+        }
+        h1{
+            font-family: 'cinzel', Times, serif;
+            font-size: 3em;
+        }
+        p{
+            font-family: "bebas-neue", sans-serif;
+            font-weight: 200;
+            font-size: 1.3em;
+        }
+        #p2{
+            font-family: "party", cursive;
+            font-size: 3em;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nisi nemo adipisci qui expedita harum cum? Accusamus labore odit similique, inventore enim nisi praesentium iusto aliquid dignissimos a distinctio saepe?</p>
+    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. In error ipsam cum eligendi, distinctio quasi non repellat velit, vero ullam illo eos dignissimos, illum placeat fugit odit. Distinctio, eius omnis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam neque, ex nam cum possimus nihil recusandae error, tenetur at enim fuga vel quaerat dicta magni. Earum explicabo maiores nisi?</p>
+</body>
+</html>

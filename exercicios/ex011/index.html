@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+    <style>
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        audio, video, iframe{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        a{
+            text-align: center;
+        }
+        h1{
+            font: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagens flexíveis</h1>
+    <p>Esta é uma imagem flexível, diminua o tamanho da tela para ver</p>
+    <picture>  
+        <source media="(max-width: 610px)" srcset="./imagens/lhasap.jpg" type="image/jpeg">
+        <source media="(max-width: 1050px)" srcset="./imagens/lhasam.jpg" type="image/jpeg">
+        <img src="./imagens/lhasag.jpg" alt="">
+    </picture>
+    <h1>Audios</h1>
+    <p>Podemos adicionar audios no nosso site por meio da tag < audio ></p>
+    <audio preload="auto" controls loop>
+        <source src="./audios/ytg-dollarStore.mp3" type="audio/mpeg">
+        <p>seu navegador não conseguiu reproduzir o audio: <a href="./audios/ytg-dollarStore.mp3">Young the giant - dollar $tore</a></p>
+    </audio>
+    <h1>Podemos hospedar nossos próprios videos</h1>
+    <video height="300px" controls>
+        <source src="./videos/hulk aprendendo.mp4" type="video/mp4">     
+    </video>
+    <h1>Podemos usar videos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4UB4ze6mMYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h1> Podemos usar videos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/307301854?h=26281581dd" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/307301854" target="_blank">Nose Hair</a> from <a href="https://vimeo.com/louisjmorton" target="_blank">Louis Morton</a> on <a href="https://vimeo.com" target="_blank">Vimeo</a>.</p>
+</body>
+</html> 

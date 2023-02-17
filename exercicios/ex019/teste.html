@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Teste de pseudo-classes e pseudo-elementos</title>
+    <style>
+        body{
+            padding: 0 20px;
+            font-size: 1.3em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1{
+            font-weight: 200;
+        }
+        .link:hover{
+            color: greenyellow;
+        }
+        .link:active{
+            color:red;
+        }
+        .link:visited{
+            color: greenyellow;
+        }
+        .especial::before{
+            content: 'Y';
+        }
+        .especial::after{
+            content:'Z'
+        }
+        .teste::first-line{
+            color: aqua;
+        }
+        #chamativo::before{
+            content: '>>>';
+        }
+        #chamativo::after{
+            content:'<<<';
+        }
+        #chamativo:hover{
+            transition: 10s;
+           color:red;
+        }
+        div:hover > p{
+            display: block;
+        }
+        .texto{
+            display: none;
+            font-style: italic;
+            text-indent: 30px;
+            text-align: justify;
+        }
+        .texto::first-letter{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando pseudo-classes</h1>
+    <p>Esse <a href="#" target="_self" class="link">link</a> está personalizado!</p>
+    <h1>Testando pseudo-elementos</h2>
+    <p>Outro <a href="#" class="link especial">link</a> personalizado!</p>
+    <p class="teste">
+        BCD <br> EFG
+    </p>
+    <div>
+        <span id="chamativo">Ler texto</span>
+        <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dignissimos, odit dolorem sapiente sed placeat, debitis molestias iusto commodi pariatur nobis nam vitae quidem recusandae obcaecati? Illo animi laborum iusto?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate amet consequuntur placeat in. Molestias nihil dolore aut eligendi tempora laborum perspiciatis sit doloribus id, aperiam obcaecati praesentium neque velit ratione?
+        </p>
+    </div>
+</body>
+</html>
