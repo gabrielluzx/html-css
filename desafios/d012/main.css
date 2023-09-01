@@ -1,47 +1,48 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Sriracha&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --primary: black;
-    --header-font: 'Passion One', cursive;
-    --text-font: 'Sriracha', cursive;
+    --font1: 'Passion One', cursive;
+    --font2: 'Sriracha', cursive;
     --bg01: url("./imagens/background001.jpg");
     --bg02: url("./imagens/background002.jpg");
 }
+
 body {
     font-family: sans-serif;
 }
+
 header {
     color: white;
     background-color: var(--primary);
-    padding: 50px;
+    padding: 3.125rem;/*50px*/
 }
 header > * {
     text-align: center;
 }
-#header-logotype {
-    font-variant: small-caps;
-    font-size: 10vw;
-    font-family: var(--header-font); 
+
+.title {
+    font: small-caps 10vw var(--font1);
 }
-#header-text {
-    font-size: 1em;
-}
-a#header-a {
+
+a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
-a#header-a:hover {
+a:hover {
     text-decoration: underline;
 }
 
 main {
-    font-family: var(--text-font);
+    font-family: var(--font2);
 }
 
 article.bg-img {
@@ -53,7 +54,8 @@ article.bg-img01 {
 article.bg-img02 {
     background-image: var(--bg02);
 }
- section {
+
+section {
     background-color: aliceblue;
     padding: 5px 20px;
 }
@@ -63,29 +65,28 @@ section.bg-color {
 section.no-bg-color {
     background-color: transparent;
 }
-section .stanza {
-    width: 41vw;
-    font-size: 3.5vw;
-    padding: 3px 10px;
-    line-height: 2em;
-    margin: 15px 0;
-}
-section.no-bg-color > .stanza {
+section.no-bg-color > p.stanza {
     color: white;
-    background-color: rgba(0, 0, 0, 0.555);
+    background-color: rgba(0, 0, 0, 0.486);
+    backdrop-filter: blur(4px);
+    animation: stanza-background 15s ease infinite alternate both;
 }
+p.stanza {
+    display: inline-block;
+    font-size: 3.5vw;
+    line-height: 2em;
+    padding: 3px 10px;
+    margin: 15px 20vw/*new p in new line*/ 15px 0;
+}
+
 footer {
     color: white;
-    font-size: 1em;
     text-align: center;
     background-color: var(--primary);
     padding: 10px;
 }
-footer small {
-    font-size: 1em;
-}
-footer a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+@keyframes stanza-background {
+    0% { background-color: rgba(0, 0, 0, 0.555)}
+    50% { background-color: rgba(13, 21, 34, 0.555)}
+    100% {background-color: rgba(22, 36, 11, 0.555)}
 }
