@@ -8,7 +8,7 @@
 :root {
     --primary: black;
     --header-font: 'Passion One', cursive;
-    --article-font: 'Sriracha', cursive;
+    --text-font: 'Sriracha', cursive;
     --bg01: url("./imagens/background001.jpg");
     --bg02: url("./imagens/background002.jpg");
 }
@@ -39,36 +39,38 @@ a#header-a {
 a#header-a:hover {
     text-decoration: underline;
 }
-article {
-    font-family: var(--article-font);
+
+main {
+    font-family: var(--text-font);
 }
-article .bg-img {
+
+article.bg-img {
     background: rgb(66, 56, 56) center right / cover no-repeat fixed;
 }
-article .bg-img01 {
+article.bg-img01 {
     background-image: var(--bg01);
 }
-article .bg-img02 {
+article.bg-img02 {
     background-image: var(--bg02);
 }
-article section {
+ section {
     background-color: aliceblue;
     padding: 5px 20px;
 }
-article .bg-color {
+section.bg-color {
     background-color: white;
 }
-article .no-bg-color {
+section.no-bg-color {
     background-color: transparent;
 }
-article .stanza {
+section .stanza {
     width: 41vw;
     font-size: 3.5vw;
     padding: 3px 10px;
     line-height: 2em;
-    margin: 15px 0 ;
+    margin: 15px 0;
 }
-.no-bg-color > .stanza {
+section.no-bg-color > .stanza {
     color: white;
     background-color: rgba(0, 0, 0, 0.555);
 }
