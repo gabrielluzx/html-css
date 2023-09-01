@@ -1,0 +1,88 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Sriracha&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary: black;
+    --header-font: 'Passion One', cursive;
+    --article-font: 'Sriracha', cursive;
+    --bg01: url("./imagens/background001.jpg");
+    --bg02: url("./imagens/background002.jpg");
+}
+body {
+    font-family: sans-serif;
+}
+header {
+    color: white;
+    background-color: var(--primary);
+    padding: 50px;
+}
+header > * {
+    text-align: center;
+}
+#header-logotype {
+    font-variant: petite-caps;
+    font-size: 10vw;
+    font-family: var(--header-font); 
+}
+#header-text {
+    font-size: 1em;
+}
+a#header-a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+a#header-a:hover {
+    text-decoration: underline;
+}
+article {
+    font-family: var(--article-font);
+}
+article .bg-img {
+    background: rgb(66, 56, 56) center right / cover no-repeat fixed;
+}
+article .bg-img01 {
+    background-image: var(--bg01);
+}
+article .bg-img02 {
+    background-image: var(--bg02);
+}
+article section {
+    background-color: aliceblue;
+    padding: 30px 20px;
+}
+article .bg-color {
+    background-color: white;
+}
+article .no-bg-color {
+    background-color: transparent;
+}
+article .stanza {
+    width: 41vw;
+    font-size: 3.5vw;
+    padding: 3px 10px;
+    line-height: 2em;
+}
+.no-bg-color > .stanza {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+footer {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    background-color: var(--primary);
+    padding: 10px;
+}
+footer small {
+    font-size: 1em;
+}
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
