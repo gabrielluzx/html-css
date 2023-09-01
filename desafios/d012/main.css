@@ -66,6 +66,7 @@ article .stanza {
     font-size: 3.5vw;
     padding: 3px 10px;
     line-height: 2em;
+    margin: 15px 0 ;
 }
 .no-bg-color > .stanza {
     color: white;
